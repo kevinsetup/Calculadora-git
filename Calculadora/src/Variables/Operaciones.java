@@ -45,6 +45,8 @@ this. operacion = operacion;
     public void setResultado(double resultado) {
         this.resultado = resultado;
     }
-
+public  void mostrarresultado(){
+    System.out.println(this.numero1 + " " + this.operacion + " " + this.numero2 + " = " + this.resultado);
+}
 
 }
