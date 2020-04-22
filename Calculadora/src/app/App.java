@@ -1,7 +1,10 @@
 package app;
 
 import Utils.Lectura;
+import Variables.Division;
+import Variables.Multiplicacion;
 import Variables.Operaciones;
+import Variables.Resta;
 import Variables.Suma;
 
 public class App {
@@ -28,13 +31,13 @@ public static void inicio()
      break;
      case 2:
      resta();
-  break;
-  case 3:
-  multi();
-  break;
-  case 4:
-  division();
-  break;
+       break;
+       case 3:
+       multi();
+       break;
+      case 4:
+      division();
+       break;
   
   
     }
@@ -55,14 +58,32 @@ public static void suma(){
 
 }
 public static void resta(){
-
+    System.out.println("Bienvenido a la Resta");
+     System.out.println("Numero 1 :");
+     double numero1 = leer.entero();
+     System.out.println("Numero 2 :");
+     double numero2 = leer.entero();
+     Resta resta = new Resta(numero1, numero2);
+     resta.mostrarresultado();
 }
 public static void multi(){
-
+    System.out.println("Bienvenido a la multiplicación");
+     System.out.println("Numero 1 :");
+     double numero1 = leer.entero();
+     System.out.println("Numero 2 :");
+     double numero2 = leer.entero();
+     Multiplicacion multi = new Multiplicacion(numero1, numero2);
+     multi.mostrarresultado();
 }
 public static void division()
 {
-
+    System.out.println("Bienvenido a la Division");
+    System.out.println("Numero 1 :");
+    double numero1 = leer.entero();
+    System.out.println("Numero 2 :");
+    double numero2 = leer.entero();
+    Division divi = new Division(numero1, numero2);
+    divi.mostrarresultado();
 }
 
 
