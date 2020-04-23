@@ -5,7 +5,7 @@ public class Operacion {
     private double numero2;
     private double resultado;
     private char operacion;
-    public Operacion(double numero1, char operacion){
+    public Operacion(final double numero1, final char operacion){
     this.numero1 = numero1;
     this. operacion = operacion;
     
@@ -17,7 +17,7 @@ public class Operacion {
             return numero1;
         }
     
-        public void setN1(double numero1) {
+        public void setN1(final double numero1) {
             this.numero1 = numero1;
         }
     
@@ -27,7 +27,7 @@ public class Operacion {
             return operacion;
         }
     
-        public void setOperacion(char operacion) {
+        public void setOperacion(final char operacion) {
             this.operacion = operacion;
         }
     
@@ -35,7 +35,7 @@ public class Operacion {
             return resultado;
         }
     
-        public void setResultado(double resultado) {
+        public void setResultado(final double resultado) {
             this.resultado = resultado;
         }
     public  void mostrarresultado(){

@@ -77,14 +77,15 @@ Mutliplicacion multi = new Mutliplicacion(numero1);
     }
     public static void division()  
     {
+        
         double numero1 = 1;
         double a [] = new double[99999];
-        System.out.println("Bienvenido a la Multiplicación");
+        System.out.println("Bienvenido a la División");
         System.out.println("Tenga en cuenta que cuando presione 0, se cancelará automaticamente y le aparecerá el resultado");
-for(double i = 0; i< a.length; i++){
+for(int i = 0; i< a.length; i++){
 System.out.print("numero " + i + " = " );
 a[i] = leer.decimal();
-numero1 = a[i] / numero1;
+numero1 /= a[i];
 Division division = new Division(numero1);
 if(a[i] == 0){
     break;
