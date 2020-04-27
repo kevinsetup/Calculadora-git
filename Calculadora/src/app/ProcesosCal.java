@@ -1,6 +1,5 @@
 package app;
 import Utils.Lectura;
-import Variables.Multiplicacion;
 import Variables2.*;
 
 
